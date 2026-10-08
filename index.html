@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Jeeshan, graphic designer and art director</title>
+<meta name="description" content="Portfolio of Jeeshan, a graphic designer and art director working on social media design, thumbnails, branding and promotional creatives.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..700&family=Parisienne&family=Archivo:wdth,wght@62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3EAF7;
+  --ink:#1D1630;
+  --muted:#645A7A;
+  --rule:rgba(29,22,48,.16);
+  --hero-a:#B79FCB; --hero-b:#E6D5EF; --hero-c:#F3EAF7;
+  --peri:#6F7FD0; --orchid:#B574D6;
+  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+  --script:"Parisienne","Snell Roundhand","Brush Script MT",cursive;
+  --grot:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --news:"Newsreader",Georgia,serif;
+  --pad:clamp(20px,4vw,56px);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#150F26; --ink:#F1E9F7; --muted:#A99DC0; --rule:rgba(241,233,247,.18);
+    --hero-a:#3E2D62; --hero-b:#25193F; --hero-c:#150F26; --peri:#8E9BE6;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#150F26; --ink:#F1E9F7; --muted:#A99DC0; --rule:rgba(241,233,247,.18);
+  --hero-a:#3E2D62; --hero-b:#25193F; --hero-c:#150F26; --peri:#8E9BE6;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{height:auto;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit}
+::selection{background:var(--orchid);color:#fff}
+:focus-visible{outline:2px solid var(--peri);outline-offset:3px}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);background:var(--hero-a);background:color-mix(in srgb,var(--hero-a) 82%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 16px/1 var(--sans);letter-spacing:.01em}
+.jg{--s:42px;position:relative;display:block;flex:none;width:var(--s);height:var(--s)}
+.jg::before{content:"";position:absolute;inset:2.4%;border-radius:50%;background:#fff}
+.jg img{position:absolute;display:block;max-width:none;width:173.6%;height:173.6%;left:-36.95%;top:-36.95%;mix-blend-mode:multiply;clip-path:inset(21.29% 21.09% 21.09% 21.29%)}
+.nav a{font:500 14px/1 var(--sans);text-decoration:none;margin-left:clamp(14px,2.4vw,32px)}
+.nav a:hover,.brand:hover .bn{text-decoration:underline;text-underline-offset:.35em}
+@media (max-width:520px){.bn{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;display:flex;flex-direction:column;overflow:hidden;min-height:clamp(620px,calc(100svh - 64px),1000px);background:linear-gradient(180deg,var(--hero-a) 0%,var(--hero-b) 68%,var(--hero-c) 100%)}
+.center{position:relative;margin:auto 0;display:flex;flex-direction:column;align-items:center;padding:clamp(28px,6vh,64px) var(--pad) clamp(20px,4vh,40px)}
+.badge{--s:clamp(76px,9vw,108px)}
+.badge::before{box-shadow:0 8px 14px rgba(40,20,70,.3)}
+.port{margin-top:10px;font:400 14px/1 var(--sans);letter-spacing:.1em;color:#1D1630}
+.plate{margin-top:clamp(22px,5vh,52px);display:flex;flex-direction:column;align-items:center;text-align:center;font-size:clamp(42px,13vw,210px);line-height:1;padding:.2em .45em .17em;border-radius:999px;color:#1D1630;
+  background:linear-gradient(180deg,#FFFFFF 0%,#F4ECF8 55%,#E3D4EC 100%);
+  box-shadow:0 .22em .5em -.12em rgba(54,30,92,.38),0 .04em .1em rgba(54,30,92,.18),inset 0 .012em 0 #fff,inset 0 -.08em .2em rgba(120,80,170,.14)}
+.nm{display:block;font:700 1em/.98 var(--serif);text-transform:uppercase;letter-spacing:.005em;text-shadow:0 .012em 0 rgba(255,255,255,.8),0 .03em .06em rgba(40,20,70,.22)}
+.sc{display:block;font:400 .32em/1 var(--script);margin-top:-.02em;padding-bottom:.04em}
+@media (max-width:700px){.plate{font-size:14vw}.sc{font-size:.42em}}
+.base{position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:0 calc(var(--pad) + 52px) clamp(22px,4vh,40px) var(--pad);font:500 clamp(15px,1.5vw,19px)/1.3 var(--sans);letter-spacing:.02em;color:#1D1630}
+.base a{font-weight:600;text-underline-offset:.3em;text-decoration-thickness:1.5px}
+.orn{position:absolute;z-index:0;pointer-events:none;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.orn-tl{left:var(--pad);top:22px;width:clamp(64px,9vw,120px);stroke:var(--peri);stroke-width:2.2}
+.orn-tr{right:0;top:10px;width:clamp(130px,24vw,330px);stroke:#1D1630;stroke-width:1.3;opacity:.5}
+.orn-br{right:var(--pad);bottom:14px;width:34px;stroke:var(--peri);stroke-width:2.2}
+.ribbon{position:absolute;z-index:0;left:0;right:0;top:44%;height:46%;width:100%;pointer-events:none;fill:none;stroke-linecap:round}
+.ribbon path{vector-effect:non-scaling-stroke}
+.ribbon{animation:wipe 2.1s cubic-bezier(.2,.7,.1,1) .35s both}
+.plate{animation:plateIn 1.1s cubic-bezier(.2,.7,.2,1) both}
+.orn{animation:fadeIn 1.2s ease 1.6s both}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes plateIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ---------- sections ---------- */
+.sec{padding:clamp(72px,11vw,160px) var(--pad) 0}
+h2{font:600 clamp(2.4rem,6vw,5rem)/1 var(--serif);letter-spacing:-.02em}
+.lead{color:var(--muted);max-width:26em;margin-top:18px}
+.show{display:grid;gap:36px 56px;align-items:center;margin-bottom:clamp(48px,7vw,110px)}
+.show .links{margin-top:26px;display:flex;gap:22px;flex-wrap:wrap;font:600 15px/1.4 var(--sans)}
+.show .links a{text-underline-offset:.3em}
+.device{border-radius:clamp(18px,2.4vw,32px);overflow:hidden;background:#E4DFEA}
+.device svg{display:block;width:100%;height:auto}
+@media (min-width:861px){.show{grid-template-columns:5fr 7fr}}
+
+/* ---------- work grid ---------- */
+.grid{display:block}
+.tile{margin:0 0 56px}
+.tile-btn{all:unset;display:block;width:100%;cursor:pointer;box-sizing:border-box}
+.tile-btn:focus-visible{outline:2px solid var(--peri);outline-offset:8px}
+.art{position:relative;overflow:hidden;background:#2623D1}
+.art svg{display:block;width:100%;height:100%}
+.r45{aspect-ratio:4/5}.r169{aspect-ratio:16/9}
+.art img{display:block;width:100%;height:100%;object-fit:cover}
+.cap{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding-top:14px}
+.ttl{font:600 20px/1.2 var(--sans);letter-spacing:-.005em}
+.yr{font:400 15px/1.6 var(--sans);color:var(--muted)}
+.sub{grid-column:1/-1;color:var(--muted)}
+.tile-btn:hover .ttl{text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:1.5px}
+@media (min-width:761px){
+  .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.5vw,40px);row-gap:clamp(48px,7vw,110px);align-items:start}
+  .tile{margin:0}
+  .t1{grid-column:1/6}
+  .t2{grid-column:6/13;margin-top:clamp(0px,12vw,200px)}
+  .t3{grid-column:1/8}
+  .t4{grid-column:8/13;margin-top:clamp(0px,10vw,170px)}
+}
+svg .d{font-family:var(--grot)}
+svg .s{font-family:var(--news)}
+svg .b{font-family:var(--serif)}
+svg .j{font-family:var(--sans)}
+svg .x{font-stretch:125%;font-variation-settings:"wdth" 125}
+
+/* ---------- services + about ---------- */
+.two{display:grid;gap:36px 40px}
+@media (min-width:861px){.two{grid-template-columns:5fr 7fr}}
+.rows{border-top:1px solid var(--rule)}
+.rows li{display:grid;gap:6px 24px;padding:26px 0;border-bottom:1px solid var(--rule)}
+.rows h3{font:600 clamp(24px,2.6vw,34px)/1.1 var(--serif);letter-spacing:-.01em}
+.rows p{color:var(--muted);max-width:30em}
+@media (min-width:700px){.rows li{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}
+.about p{max-width:34em}
+.about p+p{margin-top:1em;color:var(--muted)}
+.about .big{font:400 clamp(24px,2.5vw,34px)/1.3 var(--serif);color:var(--ink)}
+
+/* ---------- contact ---------- */
+.contact{margin-top:clamp(72px,11vw,160px);background:#1F1638;color:#F3EAF7;padding:clamp(64px,10vw,150px) var(--pad) 28px}
+.contact h2{font:600 clamp(44px,9.5vw,160px)/.95 var(--serif);letter-spacing:-.025em;max-width:11em}
+.mail{display:inline-block;margin-top:clamp(28px,4vw,56px);font:500 clamp(22px,4vw,54px)/1.1 var(--sans);letter-spacing:-.02em;text-decoration:none;border-bottom:2px solid #C48BE8;word-break:break-word}
+.mail:hover{color:#E7B8F2}
+.c-meta{display:grid;gap:18px 40px;margin-top:clamp(40px,6vw,88px);font:400 16px/1.6 var(--sans)}
+.c-meta p{opacity:.88;max-width:24em}
+.social{display:flex;gap:22px;flex-wrap:wrap}
+.social a{text-underline-offset:.3em}
+@media (min-width:861px){.c-meta{grid-template-columns:5fr 4fr 3fr}}
+.legal{display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;margin-top:clamp(56px,8vw,120px);padding-top:18px;border-top:1px solid rgba(243,234,247,.25);font:400 13px/1.5 var(--sans);opacity:.85}
+
+/* ---------- project sheet ---------- */
+dialog{padding:0;border:0;margin:0;width:100%;height:100%;max-width:none;max-height:none;background:var(--bg);color:var(--ink);overflow:auto}
+dialog::backdrop{background:transparent}
+dialog[open]{animation:sheet .4s cubic-bezier(.2,.8,.2,1)}
+@keyframes sheet{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.pd{display:grid;grid-template-columns:minmax(0,1fr);min-height:100%}
+.pd-art{height:min(88vw,62svh);padding:clamp(20px,5vw,72px);display:block}
+.pd-art svg,.pd-art img{display:block;width:100%;height:100%}
+.pd-art img{object-fit:contain}
+.pd-info{padding:clamp(28px,4vw,64px) var(--pad) calc(48px + env(safe-area-inset-bottom,0px))}
+.pd-info .meta{font:400 15px/1.4 var(--sans);color:var(--muted)}
+.pd-info h3{font:600 clamp(2.4rem,5vw,4.4rem)/.98 var(--serif);letter-spacing:-.02em;margin:10px 0 22px}
+.pd-info .desc{max-width:30em}
+.pd-info dl{margin-top:32px;border-top:1px solid var(--rule)}
+.pd-info dl div{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule);font:400 15px/1.5 var(--sans)}
+.pd-info dt{color:var(--muted)}
+.pd-wa{display:block;width:max-content;max-width:100%;margin-top:28px;font:600 15px/1.4 var(--sans);text-underline-offset:.3em}
+.pd-next{display:block;margin-top:20px;background:none;border:1px solid var(--ink);border-radius:999px;padding:12px 22px;cursor:pointer;font:600 15px/1 var(--sans)}
+.pd-next:hover{background:var(--ink);color:var(--bg)}
+.pd-close{position:fixed;z-index:5;top:calc(env(safe-area-inset-top,0px) + 14px);right:var(--pad);background:var(--bg);border:1px solid var(--ink);border-radius:999px;padding:11px 20px;cursor:pointer;font:600 14px/1 var(--sans)}
+.pd-close:hover{background:var(--ink);color:var(--bg)}
+@media (min-width:900px){
+  .pd{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:minmax(0,1fr);height:100%}
+  .pd-art{height:100%}
+  .pd-info{overflow:auto;padding-top:calc(clamp(28px,4vw,64px) + 56px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ribbon,.plate,.orn{animation:none}
+  dialog[open]{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Jeeshan, back to top"><span class="jg" aria-hidden="true"><img src="1000101687.png" alt=""></span><span class="bn">Jeeshan</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-label="Introduction">
+  <svg class="orn orn-tl" viewBox="0 0 130 130" aria-hidden="true">
+    <path d="M6 124V58C6 30 26 10 54 10H124"/>
+    <path d="M54 10C36 10 28 26 38 36C48 46 62 34 54 24"/>
+    <path d="M6 124C6 108 20 104 24 114C28 124 14 130 8 120"/>
+  </svg>
+  <svg class="orn orn-tr" viewBox="0 0 300 260" aria-hidden="true">
+    <path d="M290 8C240 -6 196 24 214 62C230 96 276 86 268 56C262 34 226 40 224 68C222 100 184 130 150 112C122 98 132 64 160 70C188 76 176 112 140 126C100 142 70 170 84 204C96 232 140 236 150 214"/>
+  </svg>
+  <svg class="orn orn-br" viewBox="0 0 70 150" aria-hidden="true">
+    <path d="M36 4C8 24 60 44 34 70C8 96 58 116 34 146"/>
+    <path d="M34 70C22 62 14 74 24 80"/>
+  </svg>
+
+  <svg class="ribbon" viewBox="0 0 1440 480" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="rb" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+        <stop offset="0" stop-color="#6F7FD0"/>
+        <stop offset=".42" stop-color="#B574D6"/>
+        <stop offset=".78" stop-color="#E7B8F2"/>
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g stroke="url(#rb)">
+      <path d="M-40 70C230 40 520 130 820 235S1290 360 1490 320" stroke-width="16" stroke-dasharray="120 10 260 10 60 10 400 10 500" opacity=".95"/>
+      <path d="M-40 96C230 66 520 156 820 261S1290 386 1490 346" stroke-width="11" opacity=".9"/>
+      <path d="M-40 118C230 88 520 178 820 283S1290 408 1490 368" stroke-width="9" stroke-dasharray="200 12 90 12 340 12 600" opacity=".85"/>
+      <path d="M-40 138C230 108 520 198 820 303S1290 428 1490 388" stroke-width="6" opacity=".8"/>
+      <path d="M-40 154C230 124 520 214 820 319S1290 444 1490 404" stroke-width="4" stroke-dasharray="70 8 160 8 30 8 420 8 600" opacity=".75"/>
+      <path d="M-40 168C230 138 520 228 820 333S1290 458 1490 418" stroke-width="3" opacity=".65"/>
+      <path d="M-40 180C230 150 520 240 820 345S1290 470 1490 430" stroke-width="2" opacity=".55"/>
+    </g>
+  </svg>
+
+  <div class="center">
+    <span class="jg badge" role="img" aria-label="JG monogram"><img src="1000101687.png" alt=""></span>
+    <p class="port">portfolio</p>
+    <h1 class="plate" aria-label="Jeeshan, graphic designer"><span class="nm" aria-hidden="true">Jeeshan</span><span class="sc" aria-hidden="true">Graphic designer</span></h1>
+  </div>
+
+  <div class="base">
+    <p>Designer &amp; Art Director</p>
+    <a href="#contact">Contact</a>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="work-h">
+  <div class="show">
+    <div>
+      <h2 id="work-h">Selected work</h2>
+      <p class="lead">Four projects across social media, thumbnails and promotional design. Select any project to see it in full.</p>
+      <p class="links"><a href="#services">What I make</a><a href="https://wa.me/917879756203?text=Hi%20Jeeshan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Start a project</a></p>
+    </div>
+    <figure class="device">
+      <svg viewBox="0 0 800 560" role="img" aria-label="A laptop showing a portfolio page with four abstract design tiles">
+        <defs>
+          <linearGradient id="lpBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8D3DE"/><stop offset="1" stop-color="#F1EDF4"/></linearGradient>
+          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6F7FD0"/><stop offset="1" stop-color="#C48BE8"/></linearGradient>
+          <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9D8F0"/><stop offset="1" stop-color="#B79FCB"/></linearGradient>
+          <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4B4FB0"/><stop offset="1" stop-color="#D79AEC"/></linearGradient>
+          <linearGradient id="gD" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B574D6"/><stop offset="1" stop-color="#F0C6E4"/></linearGradient>
+        </defs>
+        <rect width="800" height="560" fill="url(#lpBg)"/>
+        <ellipse cx="400" cy="488" rx="340" ry="20" fill="#1D1630" opacity=".16"/>
+        <path d="M70 420H730L760 458Q764 474 746 474H54Q36 474 40 458Z" fill="#BDB8C4"/>
+        <rect x="340" y="420" width="120" height="10" rx="5" fill="#9C97A5"/>
+        <rect x="120" y="60" width="560" height="366" rx="20" fill="#16131F"/>
+        <rect x="136" y="76" width="528" height="334" rx="8" fill="#0D0B14"/>
+        <rect x="162" y="106" width="118" height="26" rx="13" fill="none" stroke="#F3EAF7" stroke-opacity=".6"/>
+        <text x="221" y="123.5" text-anchor="middle" class="j" font-size="12" fill="#F3EAF7">Portfolio 2026</text>
+        <text x="162" y="214" class="b" font-size="46" font-weight="600" fill="#F3EAF7">Selected</text>
+        <text x="162" y="262" class="b" font-size="46" font-weight="600" fill="#F3EAF7">works</text>
+        <text x="162" y="300" class="j" font-size="13" fill="#F3EAF7" opacity=".7">Social, thumbnails, branding</text>
+        <rect x="162" y="340" width="108" height="30" rx="15" fill="#F3EAF7"/>
+        <text x="216" y="359.5" text-anchor="middle" class="j" font-size="12" font-weight="600" fill="#0D0B14">View projects</text>
+        <rect x="384" y="100" width="124" height="140" rx="14" fill="url(#gA)"/>
+        <g transform="translate(446 170)" fill="#F3EAF7" opacity=".9">
+          <ellipse cx="0" cy="-26" rx="13" ry="30" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-26" rx="13" ry="30" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-26" rx="13" ry="30" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-26" rx="13" ry="30" transform="rotate(315)"/>
+        </g>
+        <rect x="516" y="100" width="124" height="140" rx="14" fill="#CFC9D8"/>
+        <polygon points="622,170 600,208.1 556,208.1 534,170 556,131.9 600,131.9" fill="#EDE6F3"/>
+        <polygon points="602,170 590,190.8 566,190.8 554,170 566,149.2 590,149.2" fill="url(#gB)"/>
+        <rect x="384" y="248" width="124" height="140" rx="14" fill="url(#gC)"/>
+        <rect x="398" y="276" width="96" height="34" rx="17" fill="#F3EAF7" opacity=".92"/>
+        <rect x="398" y="320" width="70" height="34" rx="17" fill="url(#gB)"/>
+        <rect x="516" y="248" width="124" height="140" rx="14" fill="url(#gD)"/>
+        <g fill="#F3EAF7" opacity=".92">
+          <circle cx="578" cy="318" r="26"/>
+          <circle cx="608" cy="318" r="12"/><circle cx="599.2" cy="339.2" r="12"/><circle cx="578" cy="348" r="12"/><circle cx="556.8" cy="339.2" r="12"/>
+          <circle cx="548" cy="318" r="12"/><circle cx="556.8" cy="296.8" r="12"/><circle cx="578" cy="288" r="12"/><circle cx="599.2" cy="296.8" r="12"/>
+        </g>
+      </svg>
+    </figure>
+  </div>
+
+  <ul class="grid">
+    <li class="tile t1"><button class="tile-btn" type="button" aria-haspopup="dialog">
+      <div class="art r45"><img src="Digital_Marketing.png" alt="Digital Marketing poster with a frosted panel over a design-desk photo, three service pills and yellow dot patterns" width="1080" height="1350" loading="lazy" decoding="async"></div>
+      <div class="cap"><span class="ttl">Digital Marketing</span><span class="yr">Instagram post</span><span class="sub">Service poster for digital marketing</span></div>
+    </button></li>
+    <li class="tile t2"><button class="tile-btn" type="button" aria-haspopup="dialog">
+      <div class="art r169"><img src="1.png" alt="Thumbnail reading Learn Canva in 30 Minutes on a pink gradient with a laptop photo and a portrait" width="1280" height="720" loading="lazy" decoding="async"></div>
+      <div class="cap"><span
